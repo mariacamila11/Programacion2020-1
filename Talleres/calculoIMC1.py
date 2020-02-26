@@ -14,6 +14,7 @@ MENSAJE_TOCAYO= "Somos tocayos"
 MENSAJE_DESP= " Hasta pronto"
 #------------VARIABLES--------
 NOMBRE_MIO = "camila"
+calculo_IMC= 0.0
 #------------ENTRADAS---------
 _nombreUsuario = " "
 _pesoUsuario= 1
@@ -25,18 +26,18 @@ if  (NOMBRE_MIO == _nombreUsuario) :
    print (MENSAJE_TOCAYO)
 _pesoUsuario= int(input(MENSAJE_PESO))
 _estaturaUsuario= float(input(MENSAJE_ESTATURA))
-CALCULO_IMC= ((_pesoUsuario)/ ((_estaturaUsuario)**2))
-if ((CALCULO_IMC > 0 ) and (CALCULO_IMC < 15)): 
+calculo_IMC= ((_pesoUsuario)/ ((_estaturaUsuario)**2))
+if ((calculo_IMC > 0 ) and (calculo_IMC < 15)): 
     print (MENSAJE_DELGADEZMUYSEV)
-elif ((CALCULO_IMC >=15 ) and (CALCULO_IMC < 15.9)) :
+elif ((calculo_IMC >=15 ) and (calculo_IMC < 15.9)) :
     print (MENSAJE_DELGADEZSEVERA)
-elif ((CALCULO_IMC >= 15.9) and (CALCULO_IMC < 18.4)) :
+elif ((calculo_IMC >= 15.9) and (calculo_IMC < 18.4)) :
     print (MENSAJE_DELGADEZ)
-elif ((CALCULO_IMC >= 18.4) and (CALCULO_IMC < 24.9)) :
+elif ((calculo_IMC >= 18.4) and (calculo_IMC < 24.9)) :
     print (MENSAJE_SALUDABLE)
-elif ((CALCULO_IMC >=24.9 ) and (CALCULO_IMC < 29.9)) :
+elif ((calculo_IMC >=24.9 ) and (calculo_IMC < 29.9)) :
    print (MENSAJE_SOBREPESO)
-elif ((CALCULO_IMC >=29.9) and (CALCULO_IMC < 34.5)) :
+elif ((calculo_IMC >=29.9) and (calculo_IMC < 34.5)) :
     print (MENSAJE_OBESIDADSEVERA)
 else:
   print (MENSAJE_OBESIDADMORBIDA)
